@@ -391,7 +391,7 @@
     <!-- یادداشت‌های مکانی -->
     <plurals name="location_notes_title">
         <item quantity="one">#%1$s ± 1 • %2$d یادداشت</item>
-        <item quantity="other">#%1$s ± 1 • %2$d یادداشت</item>
+        <item quantity="other">#%1$s ± 1 • %2$d یادداشت‌ها</item>
     </plurals>
     <string name="location_notes_description">یادداشت‌های کوتاه دائمی به این مکان بیفزایید تا دیگران بتوانند آن‌ها را بیابند.</string>
     <string name="location_notes_relays_unavailable">رله‌های جغرافیایی در دسترس نیستند؛ یادداشت‌ها متوقف شدند</string>
