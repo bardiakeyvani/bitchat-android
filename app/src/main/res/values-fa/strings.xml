@@ -351,39 +351,116 @@
 
     <string name="mesh_service_notification_content">مش در حال اجرا — %1$d همتا</string>
 
-  <string name="verify_title">verify</string>
-  <string name="verify_my_qr_title">scan to verify me</string>
-  <string name="verify_scan_prompt_friend">scan someone elses qr</string>
-  <string name="verify_scan_someone">scan someone elses qr</string>
-  <string name="verify_show_my_qr">show my qr</string>
-  <string name="verify_remove">remove verification</string>
-  <string name="verify_qr_unavailable">qr unavailable</string>
-  <string name="verify_camera_permission">camera permission is needed to scan qr codes</string>
-  <string name="verify_request_camera">enable camera</string>
-  <string name="verify_paste_label">paste verification url</string>
-  <string name="verify_validate">validate</string>
-  <string name="verify_scanned">verification requested</string>
-  <string name="security_verification_title">security verification</string>
-  <string name="fingerprint_their">their fingerprint</string>
-  <string name="fingerprint_yours">your fingerprint</string>
-  <string name="fingerprint_pending">handshake pending</string>
-  <string name="fingerprint_no_peer">open a private chat to view fingerprints</string>
-  <string name="fingerprint_status_verified">encrypted &amp; verified</string>
-  <string name="fingerprint_status_encrypted">encrypted</string>
-  <string name="fingerprint_status_handshaking">handshaking</string>
-  <string name="fingerprint_status_failed">handshake failed</string>
-  <string name="fingerprint_status_uninitialized">not encrypted</string>
-  <string name="fingerprint_verified_label">verified</string>
-  <string name="fingerprint_verified_message">you have verified this persons identity.</string>
-  <string name="fingerprint_not_verified_label">not verified</string>
-  <string name="fingerprint_not_verified_message_fmt">compare these fingerprints with %1$s using a secure channel.</string>
-  <string name="fingerprint_mark_verified">mark as verified</string>
-  <string name="fingerprint_start_handshake">start handshake</string>
-  <string name="fingerprint_copy">copy</string>
-  <string name="verify_mutual_match_title">Mutual verification</string>
-  <string name="verify_mutual_match_body">You and %1$s verified each other</string>
-  <string name="verify_mutual_system_message">mutual verification with %1$s</string>
-  <string name="verify_success_title">Verified</string>
-  <string name="verify_success_body">You verified %1$s</string>
-  <string name="verify_success_system_message">verified %1$s</string>
+    <!-- راستی‌آزمایی و امنیت -->
+    <string name="verify_title">راستی‌آزمایی</string>
+    <string name="verify_my_qr_title">برای راستی‌آزمایی من اسکن کنید</string>
+    <string name="verify_scan_prompt_friend">QR شخص دیگری را اسکن کنید</string>
+    <string name="verify_scan_someone">QR شخص دیگری را اسکن کنید</string>
+    <string name="verify_show_my_qr">نمایش QR من</string>
+    <string name="verify_remove">حذف راستی‌آزمایی</string>
+    <string name="verify_qr_unavailable">QR در دسترس نیست</string>
+    <string name="verify_camera_permission">برای اسکن کدهای QR به مجوز دوربین نیاز است</string>
+    <string name="verify_request_camera">فعال‌کردن دوربین</string>
+    <string name="verify_paste_label">جای‌گذاری URL راستی‌آزمایی</string>
+    <string name="verify_validate">اعتبارسنجی</string>
+    <string name="verify_scanned">راستی‌آزمایی درخواست شد</string>
+    <string name="security_verification_title">راستی‌آزمایی امنیتی</string>
+    <string name="fingerprint_their">اثرانگشت آن‌ها</string>
+    <string name="fingerprint_yours">اثرانگشت شما</string>
+    <string name="fingerprint_pending">دست‌دهی در انتظار</string>
+    <string name="fingerprint_no_peer">برای مشاهدهٔ اثرانگشت‌ها، یک گفت‌وگوی خصوصی باز کنید</string>
+    <string name="fingerprint_status_verified">رمزگذاری‌شده و راستی‌آزمایی‌شده</string>
+    <string name="fingerprint_status_encrypted">رمزگذاری‌شده</string>
+    <string name="fingerprint_status_handshaking">در حال دست‌دهی</string>
+    <string name="fingerprint_status_failed">دست‌دهی ناموفق بود</string>
+    <string name="fingerprint_status_uninitialized">رمزگذاری نشده</string>
+    <string name="fingerprint_verified_label">راستی‌آزمایی‌شده</string>
+    <string name="fingerprint_verified_message">شما هویت این شخص را تأیید کرده‌اید.</string>
+    <string name="fingerprint_not_verified_label">راستی‌آزمایی نشده</string>
+    <string name="fingerprint_not_verified_message_fmt">این اثرانگشت‌ها را با %1$s از طریق یک کانال امن مقایسه کنید.</string>
+    <string name="fingerprint_mark_verified">علامت‌گذاری به عنوان راستی‌آزمایی‌شده</string>
+    <string name="fingerprint_start_handshake">شروع دست‌دهی</string>
+    <string name="fingerprint_copy">کپی</string>
+    <string name="verify_mutual_match_title">راستی‌آزمایی متقابل</string>
+    <string name="verify_mutual_match_body">شما و %1$s یکدیگر را راستی‌آزمایی کردید</string>
+    <string name="verify_mutual_system_message">راستی‌آزمایی متقابل با %1$s</string>
+    <string name="verify_success_title">راستی‌آزمایی شد</string>
+    <string name="verify_success_body">شما %1$s را راستی‌آزمایی کردید</string>
+    <string name="verify_success_system_message">%1$s راستی‌آزمایی شد</string>
+
+    <!-- یادداشت‌های مکانی -->
+    <plurals name="location_notes_title">
+        <item quantity="one">#%1$s ± 1 • %2$d یادداشت</item>
+        <item quantity="other">#%1$s ± 1 • %2$d یادداشت</item>
+    </plurals>
+    <string name="location_notes_description">یادداشت‌های کوتاه دائمی به این مکان بیفزایید تا دیگران بتوانند آن‌ها را بیابند.</string>
+    <string name="location_notes_relays_unavailable">رله‌های جغرافیایی در دسترس نیستند؛ یادداشت‌ها متوقف شدند</string>
+    <string name="location_notes_no_relays_title">رلهٔ جغرافیایی در نزدیکی نیست</string>
+    <string name="location_notes_no_relays_desc">یادداشت‌ها به رله‌های جغرافیایی وابسته‌اند. اتصال را بررسی کنید و دوباره امتحان کنید.</string>
+    <string name="loading_location_notes">در حال بارگیری یادداشت‌ها …</string>
+    <string name="location_notes_empty_title">هنوز یادداشتی نیست</string>
+    <string name="location_notes_empty_desc">اولین نفری باشید که برای این مکان یادداشت می‌افزاید.</string>
+    <string name="dismiss">نادیده گرفتن</string>
+    <string name="location_notes_input_placeholder">یادداشتی برای این مکان بیفزایید</string>
+    <string name="cd_location_notes">یادداشت‌های مکانی</string>
+
+    <!-- مکان پس‌زمینه -->
+    <string name="background_location_required_title">مکان پس‌زمینه توصیه می‌شود</string>
+    <string name="background_location_required_subtitle">اختیاری، قابلیت اطمینان مِش را بهبود می‌بخشد</string>
+    <string name="background_location_explanation">اندروید توصیه می‌کند که مکان پس‌زمینه فعال شود تا bitchat بتواند وقتی برنامه باز نیست، دستگاه‌های نزدیک را اسکن کند. این کار باعث می‌شود مِش بعد از راه‌اندازی مجدد زنده بماند.</string>
+    <string name="background_location_settings_tip">وقتی تنظیمات باز می‌شود، «همیشه مجاز» را انتخاب کنید.</string>
+    <string name="background_location_needs_for">bitchat از مکان پس‌زمینه برای موارد زیر استفاده می‌کند:</string>
+    <string name="background_location_needs_bullets">- اسکن دستگاه‌های نزدیک وقتی برنامه بسته است\n- اتصال مجدد بعد از راه‌اندازی مجدد\n- نگه‌داشتن مِش در پس‌زمینه</string>
+    <string name="background_location_privacy_note">ما هرگز موقعیت شما را جمع‌آوری یا ذخیره نمی‌کنیم. حریم خصوصی شما امن است.</string>
+    <string name="grant_background_location">اجازهٔ مکان پس‌زمینه</string>
+    <string name="skip_background_location">ادامه بدون مکان پس‌زمینه</string>
+    <string name="perm_background_location_desc">برای اسکن دستگاه‌های نزدیک وقتی برنامه در پس‌زمینه است توصیه می‌شود</string>
+    <string name="perm_background_location_system">اجازهٔ دسترسی به مکان پس‌زمینه</string>
+    <string name="perm_type_background_location">مکان پس‌زمینه</string>
+
+    <!-- سرویس مِش -->
+    <string name="mesh_service_channel_name">سرویس مِش پس‌زمینه</string>
+    <string name="mesh_service_channel_desc">مِش بلوتوث را در پس‌زمینه فعال نگه می‌دارد</string>
+    <string name="notification_action_quit_bitchat">خروج از bitchat</string>
+
+    <!-- اعلان‌های فایل -->
+    <string name="notification_file_pdf">📄</string>
+    <string name="notification_file_zip">🗜️</string>
+    <string name="notification_file_doc">📄</string>
+    <string name="notification_file_xls">📊</string>
+    <string name="notification_file_ppt">📈</string>
+    <string name="notification_file_generic">📎</string>
+
+    <!-- نماد‌های وضعیت پیام -->
+    <string name="status_sending">○</string>
+    <string name="status_pending">○</string>
+    <string name="status_sent">✓</string>
+    <string name="status_delivered">✓✓</string>
+    <string name="status_failed">⚠</string>
+    <string name="status_read">✓</string>
+
+    <!-- درباره - پس‌زمینه -->
+    <string name="about_background_title">اجرا در پس‌زمینه</string>
+    <string name="about_background_desc">مِش را هنگام بستن برنامه فعال نگه دارید (سرویس پیش‌زمینه)</string>
+    <string name="tor_not_available_in_this_build">Tor در این نسخه در دسترس نیست</string>
+
+    <!-- نمادها و قالب‌بندی -->
+    <string name="at_symbol">@</string>
+    <string name="app_brand">bitchat/</string>
+    <string name="channel_count_prefix"> · ⧉ </string>
+    <string name="hash_symbol">#</string>
+    <string name="underscore">_</string>
+    <string name="dot">.</string>
+    <string name="warning_emoji">⚠️</string>
+    <string name="at_nickname">@%1$s</string>
+    <string name="mention_suggestion_at">@%1$s</string>
+    <string name="image_counter">%1$d / %2$d</string>
+    <string name="progress_bar_brackets">[%1$s] %2$d%%</string>
+    <string name="progress_filled">█</string>
+    <string name="progress_empty">░</string>
+
+    <!-- اشکال‌زدایی -->
+    <string name="debug_question_mark">?</string>
+    <string name="debug_rssi_fmt">RSSI: %1$s</string>
+
 </resources>
